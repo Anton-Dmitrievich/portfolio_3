@@ -75,22 +75,123 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "iconFont";
   font-display: swap;
-  src: url("/fonts/font-awesome/fonts/fontawesome-webfont.eot");
-  src: local("O"), url("/fonts/font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("/fonts/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"), url("/fonts/font-awesome/fonts/fontawesome-webfont.svg") format("svg");
+  src: url("../../fonts/font-awesome/fonts/fontawesome-webfont.eot");
+  src: local("O"), url("../../fonts/font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("../../fonts/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"), url("../../fonts/font-awesome/fonts/fontawesome-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-.sd {
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --titleColorH1: rgb(0, 0, 0);
+  --titleColorH2: rgb(0, 0, 0);
+  --subTitleColorH3: rgb(38, 50, 56);
+  --txtColorP: rgb(143, 149, 165);
+  --linkColorA: rgb(38, 50, 56);
+}
+
+.body {
+  font-family: Poppins;
+}
+
+.wrapper {
+  padding: 50px 0 0 0;
+}
+
+.container {
+  width: 1340px;
   margin: 0 auto;
-  color: red;
 }
 
-body {
-  padding: 40px;
+.titleH1 {
+  color: var(--titleColorH1);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0%;
 }
 
-.sd::before {
-  content: "\f003";
-  font-family: iconFont;
-  color: aqua;
+.titleH2 {
+  color: var(--titleColorH2);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0%;
+}
+
+.subtitle {
+  color: var(--subTitleColorH3);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0%;
+}
+
+.txt-p {
+  color: var(--txtColorP);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.link-a {
+  color: var(--linkColorA);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+.navButton {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(38, 50, 56);
+  border-radius: 5px;
+}
+
+.button {
+  border-radius: 15px;
+  background: rgb(38, 50, 56);
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: 0%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__button {
+  padding: 17px 57px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .header-container {
+    padding: 0 20px;
+  }
+  .nav-list, .navButton {
+    display: none;
+  }
 }
