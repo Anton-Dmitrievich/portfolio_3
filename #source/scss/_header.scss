@@ -6,10 +6,12 @@
 }
 .header {
     &__logo {
+        margin-right: 10px;
     }
 
     &__button {
-        padding: 17px 57px ;
+        padding: 15px 57px ;
+        margin-left: -8px;
     }
 }
 .container {
@@ -18,7 +20,7 @@
 }
 .nav-list {
     display: flex;
-    gap: 40px;
+    gap: 42px;
     &__item {
     }
 
@@ -43,6 +45,7 @@
     .nav-list, .navButton{
         display: none;
     }
+    
 
 }
 @media (max-width: 767px) {
