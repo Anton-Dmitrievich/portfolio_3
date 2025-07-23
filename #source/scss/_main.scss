@@ -1,0 +1,45 @@
+.learn {
+    &__img {
+        width: 661px;
+        height: 661px;
+    }
+}
+.learn-grid {
+    display: flex;
+    align-items: center;
+    gap: 145px;
+}
+.learn-txt {
+    position: relative;
+    &__titleH1 {
+        width: 386px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+    }
+    &__lamp {
+        width: 113.24px;
+        height: 107.24px;
+        position: absolute;
+        top: 100px;
+        right: -1px;
+    }
+    &__txtP {
+        width: 380px;
+        margin-bottom: 60px;
+        font-size: 24px;
+        width: 541px;
+        line-height: 36px;
+    }
+    &__button {
+        width: 438px;
+        height: 118px;
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 320px) {
+}
