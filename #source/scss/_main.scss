@@ -1,4 +1,5 @@
 .learn {
+    margin-bottom: 100px;
     &__img {
         width: 661px;
         height: 661px;
@@ -51,15 +52,38 @@
 .titleH2 {
 }
 .skilsH2 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 96px;
 }
 .skils-grid {
     display: grid;
-    grid-template-areas: 
-    'def one';
+    grid-template-areas:
+        "speaking writing reading"
+        "speaking listenig listenig";
+    
+
     &__item {
+        background: rgb(245, 245, 245);
+    }
+
+    &__item:nth-child(1) {
+        grid-area: speaking;
+       
+    }
+    &__item:nth-child(2) {
+        grid-area: writing;
+    }
+    &__item:nth-child(3) {
+        grid-area: reading;
+    }
+    &__item:nth-child(4) {
+        grid-area: listenig;
+        
     }
 }
 .speaking {
+   
     &__txtP {
     }
 
@@ -67,13 +91,13 @@
     }
 }
 .speaking-img {
+    
 }
 .subtitle {
 }
 .speaking {
-    grid-area: 2;
     &__subtitle {
-        font-size: 33px;
+      
     }
 }
 .txtP {
@@ -81,7 +105,6 @@
 .button {
 }
 .writing {
-    grid-area: def;
 }
 
 @media (max-width: 992px) {
