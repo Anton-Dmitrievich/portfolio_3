@@ -240,3 +240,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 438px;
   height: 118px;
 }
+
+.skils-grid {
+  display: grid;
+  grid-template-areas: "def one";
+}
+.speaking {
+  grid-area: 2;
+}
+.speaking__subtitle {
+  font-size: 33px;
+}
+
+.writing {
+  grid-area: def;
+}

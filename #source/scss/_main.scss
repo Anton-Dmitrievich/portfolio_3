@@ -43,3 +43,52 @@
 }
 @media (max-width: 320px) {
 }
+
+.skils {
+}
+.container {
+}
+.titleH2 {
+}
+.skilsH2 {
+}
+.skils-grid {
+    display: grid;
+    grid-template-areas: 
+    'def one';
+    &__item {
+    }
+}
+.speaking {
+    &__txtP {
+    }
+
+    &__button {
+    }
+}
+.speaking-img {
+}
+.subtitle {
+}
+.speaking {
+    grid-area: 2;
+    &__subtitle {
+        font-size: 33px;
+    }
+}
+.txtP {
+}
+.button {
+}
+.writing {
+    grid-area: def;
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 320px) {
+}
