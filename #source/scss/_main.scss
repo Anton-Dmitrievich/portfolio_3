@@ -52,68 +52,54 @@
 .titleH2 {
 }
 .skilsH2 {
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 92px;
+    margin-bottom: 95px;
 }
-.skils-grid {
-    display: grid;
-    grid-template-areas:
-        "speaking writing reading"
-        "speaking listening listening";
-    gap: 18px;
-    &__item {
-        max-width: 435px;
+.skils {
+    &__grid {
+        display: grid;
+        grid-template-areas:
+            "speaking writing reading"
+            "speaking listening listening";
+        row-gap: 20px;
+        column-gap: 18px;
+    }
+    &__grid-item {
         border-radius: 10px;
+        background: rgb(245, 245, 245);
+        width: 435px;
     }
-    &__item:nth-child(1) {
+    &__grid-item:nth-child(1) {
         grid-area: speaking;
-        padding: 40px 0 92px 0;
-        row-gap: 10px;
     }
-    &__item:nth-child(2) {
+    &__grid-item:nth-child(2) {
         grid-area: writing;
     }
-    &__item:nth-child(3) {
+    &__grid-item:nth-child(3) {
         grid-area: reading;
     }
-    &__item:nth-child(4) {
+    &__grid-item:nth-child(4) {
         grid-area: listening;
-        max-width: 885px;
+        width: 885px;
     }
 }
 .skilsCard {
-    &__button {
-    }
-}
-.speaking {
-    &__button {
-    }
-}
-.skilsCard-img {
-}
-.speaking-img {
-}
-.skilsCard-txt {
-    &__subtitle {
+    &__flex {
     }
 
-    &__txtP {
-    }
-}
-.skilsCard-txt {
-}
-.speaking-txt {
-    padding: 30px 0 0 41px;
-    &__subtitle {
-        margin-bottom: 30px;
+    &__flex-img {
     }
 
-    &__txtP {
-        margin-bottom: 30px;
+    &__flex-content {
     }
-    &__txtP:last-child {
-        margin-bottom: 55px;
+}
+.skilsCard {
+    &__flex {
+    }
+
+    &__flex-img {
+    }
+
+    &__flex-content {
     }
 }
 .subtitle {
@@ -122,42 +108,66 @@
 }
 .button {
 }
-.writing {
-    &__button {
+.speaking {
+    &__img {
+        padding: 37px 0 0 20px;
     }
-}
-.writing-img {
-}
-.writing-txt {
-    &__subtitle {
+    &__content {
+        padding: 28px 0 0 40px;
     }
 
-    &__txtP {
+    &__content-subtitle {
+        margin-bottom: 30px;
+    }
+    &__content-txtP {
+        max-width: 341px;
+        margin-bottom: 26px;
+    }
+    &__content-button {
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 2px 64px;
+    }
+}
+.writing {
+    &__content {
+    }
+
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
     }
 }
 .reading {
-    &__button {
-    }
-}
-.reading-img {
-}
-.reading-txt {
-    &__subtitle {
+    &__content {
     }
 
-    &__txtP {
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
     }
 }
 .listening {
-    &__button {
+    &__flex {
+        display: flex;
     }
-}
-.listening-img {
-}
-.listening-txt {
-    &__subtitle {
+    &__content {
     }
 
-    &__txtP {
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
     }
 }
