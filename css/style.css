@@ -128,7 +128,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--subTitleColorH3);
   font-size: 30px;
   font-weight: 600;
-  line-height: 80px;
   letter-spacing: 0%;
 }
 
@@ -242,4 +241,50 @@ h1, h2, h3, h4, h5, h6 {
 .learn-txt__button {
   width: 438px;
   height: 118px;
+}
+
+.skilsH2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 92px;
+}
+
+.skils-grid {
+  display: grid;
+  grid-template-areas: "speaking writing reading" "speaking listening listening";
+  gap: 18px;
+}
+.skils-grid__item {
+  max-width: 435px;
+  border-radius: 10px;
+}
+.skils-grid__item:nth-child(1) {
+  grid-area: speaking;
+  padding: 40px 0 92px 0;
+  row-gap: 10px;
+}
+.skils-grid__item:nth-child(2) {
+  grid-area: writing;
+}
+.skils-grid__item:nth-child(3) {
+  grid-area: reading;
+}
+.skils-grid__item:nth-child(4) {
+  grid-area: listening;
+  max-width: 885px;
+}
+
+.speaking {
+  display: flex;
+  flex-direction: column;
+}
+.speaking-txt {
+  flex: auto;
+  padding: 30px 0 0 41px;
+}
+.speaking-txt__subtitle {
+  margin-bottom: 30px;
+}
+.speaking-txt__txtP {
+  margin-bottom: 30px;
 }
