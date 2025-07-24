@@ -62,11 +62,9 @@
         "speaking writing reading"
         "speaking listening listening";
     gap: 18px;
-    
     &__item {
         max-width: 435px;
         border-radius: 10px;
-
     }
     &__item:nth-child(1) {
         grid-area: speaking;
@@ -89,15 +87,12 @@
     }
 }
 .speaking {
-    display: flex;
-    flex-direction: column;
     &__button {
     }
 }
 .skilsCard-img {
 }
 .speaking-img {
-  
 }
 .skilsCard-txt {
     &__subtitle {
@@ -109,7 +104,6 @@
 .skilsCard-txt {
 }
 .speaking-txt {
-    flex: auto;
     padding: 30px 0 0 41px;
     &__subtitle {
         margin-bottom: 30px;
@@ -117,6 +111,9 @@
 
     &__txtP {
         margin-bottom: 30px;
+    }
+    &__txtP:last-child {
+        margin-bottom: 55px;
     }
 }
 .subtitle {
