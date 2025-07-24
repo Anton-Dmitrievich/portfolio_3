@@ -52,66 +52,90 @@
 .titleH2 {
 }
 .skilsH2 {
-    text-align: center;
-    letter-spacing: 2px;
-    margin-bottom: 96px;
 }
 .skils-grid {
-    display: grid;
-    grid-template-areas:
-        "speaking writing reading"
-        "speaking listenig listenig";
-    
 
-    &__item {
-        background: rgb(245, 245, 245);
-    }
+		&__item {
+		}
+}
+.skilsCard {
 
-    &__item:nth-child(1) {
-        grid-area: speaking;
-       
-    }
-    &__item:nth-child(2) {
-        grid-area: writing;
-    }
-    &__item:nth-child(3) {
-        grid-area: reading;
-    }
-    &__item:nth-child(4) {
-        grid-area: listenig;
-        
-    }
+		&__button {
+		}
 }
 .speaking {
-   
-    &__txtP {
-    }
 
-    &__button {
-    }
+		&__button {
+		}
+}
+.skilsCard-img {
 }
 .speaking-img {
-    
+}
+.skilsCard-txt {
+
+		&__subtitle {
+		}
+
+		&__txtP {
+		}
+}
+.speaking-txt {
+
+		&__subtitle {
+		}
+
+		&__txtP {
+		}
 }
 .subtitle {
-}
-.speaking {
-    &__subtitle {
-      
-    }
 }
 .txtP {
 }
 .button {
 }
 .writing {
-}
 
-@media (max-width: 992px) {
+		&__button {
+		}
 }
-@media (max-width: 767px) {
+.writing-img {
 }
-@media (max-width: 575px) {
+.writing-txt {
+
+		&__subtitle {
+		}
+
+		&__txtP {
+		}
 }
-@media (max-width: 320px) {
+.reading {
+
+		&__button {
+		}
+}
+.reading-img {
+}
+.reading-txt {
+
+		&__subtitle {
+		}
+
+		&__txtP {
+		}
+}
+.listening {
+
+		&__button {
+		}
+}
+.listening-img {
+}
+.listening-txt {
+
+		&__subtitle {
+		}
+
+		&__txtP {
+		}
 }

@@ -243,29 +243,3 @@ h1, h2, h3, h4, h5, h6 {
   width: 438px;
   height: 118px;
 }
-
-.skilsH2 {
-  text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 96px;
-}
-
-.skils-grid {
-  display: grid;
-  grid-template-areas: "speaking writing reading" "speaking listenig listenig";
-}
-.skils-grid__item {
-  background: rgb(245, 245, 245);
-}
-.skils-grid__item:nth-child(1) {
-  grid-area: speaking;
-}
-.skils-grid__item:nth-child(2) {
-  grid-area: writing;
-}
-.skils-grid__item:nth-child(3) {
-  grid-area: reading;
-}
-.skils-grid__item:nth-child(4) {
-  grid-area: listenig;
-}
