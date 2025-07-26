@@ -249,3 +249,40 @@ h1, h2, h3, h4, h5, h6 {
   width: 438px;
   height: 118px;
 }
+
+.skils__grid {
+  height: 894px;
+  display: grid;
+  grid-template-areas: "speaking writing reading" "speaking listening listening";
+  row-gap: 18px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.skils__grid-item {
+  max-width: 435px;
+  max-height: 100%;
+  border-radius: 10px;
+  background: rgb(245, 245, 245);
+}
+.skils__grid-item:nth-child(1) {
+  grid-area: speaking;
+}
+.skils__grid-item:nth-child(2) {
+  grid-area: writing;
+}
+.skils__grid-item:nth-child(3) {
+  grid-area: reading;
+}
+.skils__grid-item:nth-child(4) {
+  grid-area: listening;
+}
+
+.skilsCard__flex {
+  display: flex;
+}
+.skilsCard__flex:nth-child(1) {
+  background: bisque;
+}
+.listening__flex {
+  display: flex;
+}

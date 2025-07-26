@@ -45,3 +45,122 @@
 @media (max-width: 320px) {
 }
 
+.skils {
+    &__grid {
+        height: 894px;
+        display: grid;
+        grid-template-areas:
+            "speaking writing reading"
+            "speaking listening listening";
+        row-gap: 18px;
+        column-gap: 20px;
+    }
+
+    &__grid-item {
+        max-width: 435px;
+        max-height: 100%;
+        border-radius: 10px;
+        background: rgb(245, 245, 245);
+    }
+    &__grid-item:nth-child(1) {
+        grid-area: speaking;
+    }
+    &__grid-item:nth-child(2) {
+        grid-area: writing;
+    }
+    &__grid-item:nth-child(3) {
+        grid-area: reading;
+    }
+    &__grid-item:nth-child(4) {
+        grid-area: listening;
+    }
+}
+.container {
+}
+.titleH2 {
+}
+.skilsH2 {
+}
+.speaking {
+    &__img {
+    }
+
+    &__content {
+    }
+
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
+    }
+}
+.skilsCard {
+    &__flex {
+        display: flex;
+    }
+    &__flex:nth-child(1) {
+       
+        background: bisque;
+    }
+
+    &__flex-img {
+    }
+
+    &__flex-content {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+.skils-button {
+}
+.writing {
+    &__content {
+    }
+
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
+    }
+}
+.reading {
+    &__content {
+    }
+
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
+    }
+}
+.listening {
+    &__flex {
+        display: flex;
+        
+    }
+
+    &__content {
+    }
+
+    &__content-subtitle {
+    }
+
+    &__content-txtP {
+    }
+
+    &__content-button {
+    }
+}
