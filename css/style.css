@@ -250,6 +250,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 118px;
 }
 
+.skilsH2 {
+  margin-bottom: 95px;
+  text-align: center;
+}
+
 .skils__grid {
   height: 894px;
   display: grid;
@@ -259,10 +264,7 @@ h1, h2, h3, h4, h5, h6 {
        column-gap: 20px;
 }
 .skils__grid-item {
-  max-width: 435px;
-  max-height: 100%;
-  border-radius: 10px;
-  background: rgb(245, 245, 245);
+  border: solid 1px red;
 }
 .skils__grid-item:nth-child(1) {
   grid-area: speaking;
@@ -277,12 +279,23 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: listening;
 }
 
-.skilsCard__flex {
-  display: flex;
+.speaking__body {
+  border: solid 1px red;
+  width: 435px;
+  padding: 35px 25px 92px 25px;
 }
-.skilsCard__flex:nth-child(1) {
-  background: bisque;
-}
-.listening__flex {
+.speaking__container {
+  border: solid 1px red;
   display: flex;
+  flex-direction: column;
+  height: 894px;
+}
+.speaking__img {
+  margin-bottom: 27px;
+  border: solid 1px red;
+}
+.speaking__content {
+  padding: 0 0 0 20px;
+  margin-bottom: 20px;
+  flex: auto;
 }
