@@ -77,11 +77,13 @@
     line-height: 54px;
     letter-spacing: 0%;
 }
-.skils-button {
+.card-button {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     padding: 2px 64px;
     border-radius: 5px;
+    width: 230px;
+    height: 60px;
 }
 @import "_header";
 @import "_main";
