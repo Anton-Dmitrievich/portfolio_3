@@ -72,18 +72,20 @@
         background: rgb(245, 245, 245);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
     &__grid-item:nth-child(1) {
         grid-area: speaking;
         height: 894px;
         border: 1px solid red;
         padding: 40px 16px 92px 43px;
+        justify-content: space-between;
     }
     &__grid-item:nth-child(2) {
         height: 531px;
         grid-area: writing;
         border: 1px solid red;
+        padding: 0 0 40px 38px;
+        
     }
     &__grid-item:nth-child(3) {
         grid-area: reading;
@@ -105,18 +107,54 @@
 }
 .skils-speaking {
     &__img {
-       margin-bottom: 42px;
+        margin-bottom: 42px;
     }
 
     &__subtitle {
         margin-bottom: 28px;
     }
-    &__block-txt{
+    &__block-txt {
         flex: auto;
     }
 
     &__txtP {
         margin-bottom: 20px;
+    }
+
+    &__buttom {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+.card-button {
+}
+
+.skils {
+    &__grid-item {
+    }
+}
+.skils-writing {
+    &__img {
+        width: 293px;
+        height: 293px;
+        margin-left: 80px;
+        margin-bottom: -16px;
+    }
+
+    &__subtitle {
+        margin-bottom: 16px;
+    }
+
+    &__block-txt {
+        width: 340px;
+        flex: auto;
+    }
+
+    &__txtP {
     }
 
     &__buttom {
