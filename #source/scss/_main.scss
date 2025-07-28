@@ -172,15 +172,18 @@
 .skils-reading {
     &__header {
         transform: translate(-39px, 9px);
+        margin-bottom:33px ;
     }
 
     &__header-img {
     }
 
     &__subtitle {
+        margin-bottom:10px ;
     }
 
     &__txt {
+        flex: auto;
     }
 
     &__txt-txtP {

@@ -325,6 +325,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skils-reading__header {
   transform: translate(-39px, 9px);
+  margin-bottom: 33px;
+}
+.skils-reading__subtitle {
+  margin-bottom: 10px;
+}
+.skils-reading__txt {
+  flex: auto;
 }
 /*
 
