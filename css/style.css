@@ -288,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: reading;
   height: 531px;
   border: 1px solid red;
+  padding: 0 0 29px 31px;
 }
 .skils__grid-item:nth-child(4) {
   grid-area: listening;
@@ -322,3 +323,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 340px;
   flex: auto;
 }
+.skils-reading__header {
+  transform: translate(-39px, 9px);
+}
+/*
+
+
+
+*/

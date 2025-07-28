@@ -85,12 +85,12 @@
         grid-area: writing;
         border: 1px solid red;
         padding: 0 0 40px 38px;
-        
     }
     &__grid-item:nth-child(3) {
         grid-area: reading;
         height: 531px;
         border: 1px solid red;
+        padding: 0 0 29px 31px;
     }
     &__grid-item:nth-child(4) {
         grid-area: listening;
@@ -168,3 +168,38 @@
 }
 .card-button {
 }
+
+.skils-reading {
+    &__header {
+        transform: translate(-39px, 9px);
+    }
+
+    &__header-img {
+    }
+
+    &__subtitle {
+    }
+
+    &__txt {
+    }
+
+    &__txt-txtP {
+    }
+
+    &__footer {
+    }
+
+    &__footer-button {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+/*
+
+ 
+
+*/
