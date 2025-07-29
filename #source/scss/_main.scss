@@ -68,6 +68,7 @@
 
     &__grid-item {
         width: 435px;
+        padding: 0px px 0px 0px;
         border-radius: 10px;
         background: rgb(245, 245, 245);
         display: flex;
@@ -76,28 +77,26 @@
     &__grid-item:nth-child(1) {
         grid-area: speaking;
         height: 894px;
-        border: 1px solid red;
-        padding: 40px 16px 92px 43px;
+        padding: 38px 16px 92px 21px;
         justify-content: space-between;
     }
     &__grid-item:nth-child(2) {
         height: 531px;
         grid-area: writing;
-        border: 1px solid red;
+
         padding: 0 0 40px 38px;
     }
     &__grid-item:nth-child(3) {
         grid-area: reading;
         height: 531px;
-        border: 1px solid red;
-        padding: 0 0 29px 31px;
+
+        padding: 0 0 41px 31px;
     }
     &__grid-item:nth-child(4) {
         grid-area: listening;
-        border: 1px solid red;
-        display: flex;
         width: 885px;
         height: 343px;
+        padding: 47px 29px 59px 42px;
     }
 }
 
@@ -106,22 +105,34 @@
     }
 }
 .skils-speaking {
-    &__img {
-        margin-bottom: 42px;
+    &__header {
+        margin-bottom: 28px;
+    }
+
+    &__header-img {
     }
 
     &__subtitle {
-        margin-bottom: 28px;
+        padding: 0 0 0 19px;
+        margin-bottom: 32px;
     }
-    &__block-txt {
+
+    &__txt {
         flex: auto;
+        padding: 0 43px 0 14px;
+    }
+    &__txt-txtP {
+        margin-bottom: 23px;
+    }
+    &__txt-txtP:last-child {
+        margin-bottom: 0px;
     }
 
-    &__txtP {
-        margin-bottom: 20px;
+    &__footer {
+        padding-left: 19px;
     }
 
-    &__buttom {
+    &__footer-button {
     }
 }
 .subtitle {
@@ -138,29 +149,34 @@
     }
 }
 .skils-writing {
-    &__img {
-        width: 293px;
-        height: 293px;
-        margin-left: 80px;
-        margin-bottom: -16px;
+    &__header {
+        margin-bottom: -14px;
+        transform: translate(76px, 0px);
+    }
+
+    &__header-img {
     }
 
     &__subtitle {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
-
-    &__block-txt {
-        width: 340px;
+    &__txt-txtP {
         flex: auto;
     }
-
-    &__txtP {
+    &__txt-txtP {
     }
 
-    &__buttom {
+    &__footer-button {
     }
 }
 .subtitle {
+}
+.skils-reading {
+    &__txt {
+    }
+
+    &__footer {
+    }
 }
 .txtP {
 }
@@ -172,14 +188,14 @@
 .skils-reading {
     &__header {
         transform: translate(-39px, 9px);
-        margin-bottom:33px ;
+        margin-bottom: 33px;
     }
 
     &__header-img {
     }
 
     &__subtitle {
-        margin-bottom:10px ;
+        margin-bottom: 10px;
     }
 
     &__txt {
@@ -201,8 +217,53 @@
 }
 .button {
 }
-/*
 
- 
+.skils {
+    &__grid-item {
+    }
+}
+.skils-Listening {
+    display: flex;
+    flex-direction: row-reverse;
+    &__header {
+    }
 
-*/
+    &__header-img {
+    }
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+    }
+
+    &__subtitle {
+    margin-bottom: 19px;
+    }
+
+    &__txt-txtP {
+        flex: auto;
+    }
+
+    &__footer {
+    }
+
+    &__footer-button {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+.card-button {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 320px) {
+}
