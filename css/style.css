@@ -275,8 +275,6 @@ h1, h2, h3, h4, h5, h6 {
 .skils__grid-item:nth-child(1) {
   grid-area: speaking;
   height: 894px;
-  padding: 38px 16px 92px 21px;
-  justify-content: space-between;
 }
 .skils__grid-item:nth-child(2) {
   height: 531px;
@@ -293,60 +291,4 @@ h1, h2, h3, h4, h5, h6 {
   width: 885px;
   height: 343px;
   padding: 47px 29px 59px 42px;
-}
-
-.skils-speaking__header {
-  margin-bottom: 28px;
-}
-.skils-speaking__subtitle {
-  padding: 0 0 0 19px;
-  margin-bottom: 32px;
-}
-.skils-speaking__txt {
-  flex: auto;
-  padding: 0 43px 0 14px;
-}
-.skils-speaking__txt-txtP {
-  margin-bottom: 23px;
-}
-.skils-speaking__txt-txtP:last-child {
-  margin-bottom: 0px;
-}
-.skils-speaking__footer {
-  padding-left: 19px;
-}
-.skils-writing__header {
-  margin-bottom: -14px;
-  transform: translate(76px, 0px);
-}
-.skils-writing__subtitle {
-  margin-bottom: 15px;
-}
-.skils-writing__txt-txtP {
-  flex: auto;
-}
-.skils-reading__header {
-  transform: translate(-39px, 9px);
-  margin-bottom: 33px;
-}
-.skils-reading__subtitle {
-  margin-bottom: 10px;
-}
-.skils-reading__txt {
-  flex: auto;
-}
-.skils-Listening {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.skils-Listening__txt {
-  display: flex;
-  flex-direction: column;
-  padding-top: 24px;
-}
-.skils-Listening__subtitle {
-  margin-bottom: 19px;
-}
-.skils-Listening__txt-txtP {
-  flex: auto;
 }

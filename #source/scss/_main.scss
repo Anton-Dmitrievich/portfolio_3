@@ -77,8 +77,6 @@
     &__grid-item:nth-child(1) {
         grid-area: speaking;
         height: 894px;
-        padding: 38px 16px 92px 21px;
-        justify-content: space-between;
     }
     &__grid-item:nth-child(2) {
         height: 531px;
@@ -100,39 +98,24 @@
     }
 }
 
-.skils {
-    &__grid-item {
-    }
-}
 .skils-speaking {
-    &__header {
-        margin-bottom: 28px;
+    &__pictures {
     }
 
-    &__header-img {
+    &__img {
+    }
+}
+.skils-speakin {
+    &__flex {
     }
 
     &__subtitle {
-        padding: 0 0 0 19px;
-        margin-bottom: 32px;
     }
 
-    &__txt {
-        flex: auto;
-        padding: 0 43px 0 14px;
-    }
-    &__txt-txtP {
-        margin-bottom: 23px;
-    }
-    &__txt-txtP:last-child {
-        margin-bottom: 0px;
+    &__content {
     }
 
-    &__footer {
-        padding-left: 19px;
-    }
-
-    &__footer-button {
+    &__content-txt {
     }
 }
 .subtitle {
@@ -142,128 +125,4 @@
 .button {
 }
 .card-button {
-}
-
-.skils {
-    &__grid-item {
-    }
-}
-.skils-writing {
-    &__header {
-        margin-bottom: -14px;
-        transform: translate(76px, 0px);
-    }
-
-    &__header-img {
-    }
-
-    &__subtitle {
-        margin-bottom: 15px;
-    }
-    &__txt-txtP {
-        flex: auto;
-    }
-    &__txt-txtP {
-    }
-
-    &__footer-button {
-    }
-}
-.subtitle {
-}
-.skils-reading {
-    &__txt {
-    }
-
-    &__footer {
-    }
-}
-.txtP {
-}
-.button {
-}
-.card-button {
-}
-
-.skils-reading {
-    &__header {
-        transform: translate(-39px, 9px);
-        margin-bottom: 33px;
-    }
-
-    &__header-img {
-    }
-
-    &__subtitle {
-        margin-bottom: 10px;
-    }
-
-    &__txt {
-        flex: auto;
-    }
-
-    &__txt-txtP {
-    }
-
-    &__footer {
-    }
-
-    &__footer-button {
-    }
-}
-.subtitle {
-}
-.txtP {
-}
-.button {
-}
-
-.skils {
-    &__grid-item {
-    }
-}
-.skils-Listening {
-    display: flex;
-    flex-direction: row-reverse;
-    &__header {
-    }
-
-    &__header-img {
-    }
-
-    &__txt {
-        display: flex;
-        flex-direction: column;
-        padding-top: 24px;
-    }
-
-    &__subtitle {
-    margin-bottom: 19px;
-    }
-
-    &__txt-txtP {
-        flex: auto;
-    }
-
-    &__footer {
-    }
-
-    &__footer-button {
-    }
-}
-.subtitle {
-}
-.txtP {
-}
-.button {
-}
-.card-button {
-}
-@media (max-width: 992px) {
-}
-@media (max-width: 767px) {
-}
-@media (max-width: 575px) {
-}
-@media (max-width: 320px) {
 }
