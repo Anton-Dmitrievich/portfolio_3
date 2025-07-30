@@ -387,13 +387,3 @@ h1, h2, h3, h4, h5, h6 {
 .about-footer__card:nth-child(2) {
   margin-left: 34px;
 }
-.pricing-card__cash::before {
-  content: " £5.99";
-  color: rgb(38, 50, 56);
-  font-family: Poppins;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0%;
-  text-align: left;
-}
