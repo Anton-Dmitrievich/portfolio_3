@@ -8,7 +8,8 @@
 .learn-grid {
     display: flex;
     align-items: center;
-    gap: 145px;
+    gap: 138px;
+    flex-wrap: wrap;
 }
 .learn-txt {
     position: relative;
@@ -64,42 +65,35 @@
             "speaking listening listening";
         row-gap: 18px;
         column-gap: 20px;
+        width: 435px;
+        margin-bottom: 286px;
     }
 
     &__grid-item {
-        width: 435px;
-        padding: 0px px 0px 0px;
         border-radius: 10px;
         background: rgb(245, 245, 245);
-        display: flex;
-        flex-direction: column;
+        width: 435px;
     }
     &__grid-item:nth-child(1) {
         grid-area: speaking;
         height: 894px;
     }
     &__grid-item:nth-child(2) {
-        height: 531px;
         grid-area: writing;
-
-        padding: 0 0 40px 38px;
     }
     &__grid-item:nth-child(3) {
         grid-area: reading;
-        height: 531px;
-
-        padding: 0 0 41px 31px;
     }
     &__grid-item:nth-child(4) {
-        grid-area: listening;
         width: 885px;
-        height: 343px;
-        padding: 47px 29px 59px 42px;
+        grid-area: listening;
     }
 }
 
 .skils-speaking {
     &__pictures {
+        padding: 35px 22px 0px 23px;
+        margin-bottom: 32px;
     }
 
     &__img {
@@ -107,15 +101,25 @@
 }
 .skils-speakin {
     &__flex {
+        display: flex;
+        flex-direction: column;
+        padding: 0 51px 92px 43px;
+        justify-content: space-between;
+        height: 440px;
     }
 
     &__subtitle {
+        margin-bottom: 30px;
     }
 
     &__content {
+        flex: auto;
     }
-
     &__content-txt {
+        margin-bottom: 25px;
+    }
+    &__content-txt:last-child {
+        margin-bottom: 0px;
     }
 }
 .subtitle {
@@ -125,4 +129,200 @@
 .button {
 }
 .card-button {
+}
+
+.skils-writing {
+    &__pictures {
+        width: 293px;
+
+        padding: 0 0 0 118px;
+        margin-bottom: -14px;
+    }
+
+    &__img {
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px 0 40px;
+        height: 212px;
+    }
+
+    &__subtitle {
+        margin-bottom: 16px;
+    }
+
+    &__content {
+        flex: auto;
+    }
+
+    &__content-txt {
+    }
+
+    &__button {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+.card-button {
+}
+
+.skils-reading {
+    &__pictures {
+        padding: 11px 0 0 0;
+        margin-bottom: 25px;
+    }
+
+    &__img {
+    }
+
+    &__flex {
+        padding: 0 58px 0 36px;
+        display: flex;
+        flex-direction: column;
+        height: 205px;
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        flex: auto;
+    }
+
+    &__content-txt {
+    }
+
+    &__button {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+.card-button {
+}
+
+.skils-Listening {
+    &__flex-card {
+        height: 343px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 68px 29px 0 45px;
+    }
+    &__pictures {
+    }
+
+    &__img {
+    }
+
+    &__flex {
+        padding: 23px 84px 0 0;
+    }
+
+    &__subtitle {
+    }
+
+    &__content {
+        flex: auto;
+        margin: 19px 0 -14px 0;
+        height: 102px;
+    }
+
+    &__content-txt {
+    }
+
+    &__button {
+    }
+}
+.subtitle {
+}
+.txtP {
+}
+.button {
+}
+.card-button {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 320px) {
+}
+
+.about {
+}
+.container {
+}
+.about-container {
+    &__flex {
+        display: flex;
+        gap: 200px;
+    }
+}
+.about-blockTxt {
+}
+.about-title {
+    &__titleh2 {
+        margin-bottom: 23px;
+    }
+}
+.titleH2 {
+}
+.about-content {
+    &__txtP {
+        margin-bottom: 0;
+        line-height: 30px;
+        letter-spacing: 2px;
+        margin-bottom: 37px;
+    }
+}
+.txtP {
+}
+.about-footer {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 58px 0 0;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card:nth-child(2) {
+        margin-left: 34px;
+    }
+
+    &__h2 {
+    }
+
+    &__txt {
+    }
+}
+.about-img {
+}
+.about-pic {
+    &__img {
+        transform: translate(0px, -31px);
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 320px) {
 }
