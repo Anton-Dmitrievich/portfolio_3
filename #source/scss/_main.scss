@@ -46,37 +46,40 @@
 @media (max-width: 320px) {
 }
 
-.skils {
-}
 .container {
 }
 .titleH2 {
 }
-.skilsH2 {
-    margin-bottom: 95px;
+.skils-title {
     text-align: center;
+    margin-bottom: 97px;
 }
-
-.skils {
+.skills {
     &__grid {
         display: grid;
         grid-template-areas:
             "speaking writing reading"
             "speaking listening listening";
-        row-gap: 18px;
-        column-gap: 20px;
-        width: 435px;
-        margin-bottom: 286px;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 20px;
     }
 
     &__grid-item {
         border-radius: 10px;
         background: rgb(245, 245, 245);
+        padding: 15px 23px;
+        display: flex;
+        flex-direction: column;
         width: 435px;
+        p {
+            font-size: 16px;
+            flex: auto;
+        }
     }
     &__grid-item:nth-child(1) {
         grid-area: speaking;
-        height: 894px;
+        padding: 0 0 118px 0;
     }
     &__grid-item:nth-child(2) {
         grid-area: writing;
@@ -85,278 +88,40 @@
         grid-area: reading;
     }
     &__grid-item:nth-child(4) {
-        width: 885px;
         grid-area: listening;
     }
-}
 
-.skils-speaking {
-    &__pictures {
-        padding: 35px 22px 0px 23px;
-        margin-bottom: 32px;
+    &__grid-image {
+        img {
+            max-width: 100%;
+        }
     }
 
-    &__img {
-    }
-}
-.skils-speakin {
-    &__flex {
-        display: flex;
-        flex-direction: column;
-        padding: 0 51px 92px 43px;
-        justify-content: space-between;
-        height: 440px;
-    }
-
-    &__subtitle {
-        margin-bottom: 30px;
-    }
-
-    &__content {
+    &__grid-content {
         flex: auto;
     }
-    &__content-txt {
-        margin-bottom: 25px;
+}
+.speaking {
+    .skills__grid-image {
+        padding: 35px 0 0 21px;
+        margin-bottom: 29px;
     }
-    &__content-txt:last-child {
-        margin-bottom: 0px;
+    .skills__grid-content {
+        padding: 0 0 0 43px;
     }
-}
-.subtitle {
-}
-.txtP {
-}
-.button {
-}
-.card-button {
-}
-
-.skils-writing {
-    &__pictures {
-        width: 293px;
-
-        padding: 0 0 0 118px;
-        margin-bottom: -14px;
+    .subtitle {
+        margin-bottom: 29px;
     }
-
-    &__img {
+    .txtP {
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 24px;
+        max-width: 347px;
     }
-
-    &__flex {
-        display: flex;
-        flex-direction: column;
-        padding: 0 40px 0 40px;
-        height: 212px;
-    }
-
-    &__subtitle {
-        margin-bottom: 16px;
-    }
-
-    &__content {
-        flex: auto;
-    }
-
-    &__content-txt {
-    }
-
-    &__button {
-    }
-}
-.subtitle {
-}
-.txtP {
-}
-.button {
-}
-.card-button {
-}
-
-.skils-reading {
-    &__pictures {
-        padding: 11px 0 0 0;
-        margin-bottom: 25px;
-    }
-
-    &__img {
-    }
-
-    &__flex {
-        padding: 0 58px 0 36px;
-        display: flex;
-        flex-direction: column;
-        height: 205px;
-    }
-
-    &__subtitle {
-        margin-bottom: 10px;
-    }
-
-    &__content {
-        flex: auto;
-    }
-
-    &__content-txt {
-    }
-
-    &__button {
-    }
-}
-.subtitle {
-}
-.txtP {
-}
-.button {
-}
-.card-button {
-}
-
-.skils-Listening {
-    &__flex-card {
-        height: 343px;
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 68px 29px 0 45px;
-    }
-    &__pictures {
-    }
-
-    &__img {
-    }
-
-    &__flex {
-        padding: 23px 84px 0 0;
-    }
-
-    &__subtitle {
-    }
-
-    &__content {
-        flex: auto;
-        margin: 19px 0 -14px 0;
-        height: 102px;
-    }
-
-    &__content-txt {
-    }
-
-    &__button {
-    }
-}
-.subtitle {
-}
-.txtP {
-}
-.button {
-}
-.card-button {
-}
-@media (max-width: 992px) {
-}
-@media (max-width: 767px) {
-}
-@media (max-width: 575px) {
-}
-@media (max-width: 320px) {
-}
-
-.about {
-}
-.container {
-}
-.about-container {
-    &__flex {
-        display: flex;
-        gap: 200px;
-    }
-}
-.about-blockTxt {
-}
-.about-title {
-    &__titleh2 {
-        margin-bottom: 23px;
-    }
-}
-.titleH2 {
-}
-.about-content {
-    &__txtP {
+    .txtP:last-child {
         margin-bottom: 0;
-        line-height: 30px;
-        letter-spacing: 2px;
-        margin-bottom: 37px;
     }
-}
-.txtP {
-}
-.about-footer {
-    &__flex {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 58px 0 0;
+    .card-button {
+        margin-left: 41px;
     }
-
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__card:nth-child(2) {
-        margin-left: 34px;
-    }
-
-    &__h2 {
-    }
-
-    &__txt {
-    }
-}
-.about-img {
-    &__img {
-    }
-}
-
-@media (max-width: 992px) {
-}
-@media (max-width: 767px) {
-}
-@media (max-width: 575px) {
-}
-@media (max-width: 320px) {
-}
-
-.pricing {
-}
-.container {
-}
-.titleH2 {
-}
-.pricing-flex {
-}
-.pricing-card {
-    &__pic {
-    }
-
-    &__pic-img {
-    }
-
-    &__subtitle {
-    }
-
-    &__content {
-    }
-
-    &__content-txtp {
-    }
-
-    &__cash {
-    }
-
-
-    &__cash-txtP {
-    }
-}
-.subtitle {
-}
-.txtP {
 }
