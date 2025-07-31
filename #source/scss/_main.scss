@@ -68,27 +68,34 @@
     &__grid-item {
         border-radius: 10px;
         background: rgb(245, 245, 245);
-        padding: 15px 23px;
-        display: flex;
-        flex-direction: column;
-        width: 435px;
-        p {
-            font-size: 16px;
-            flex: auto;
-        }
     }
     &__grid-item:nth-child(1) {
         grid-area: speaking;
-        padding: 0 0 118px 0;
+        padding: 0 0 92px 0;
+        width: 435px;
+        display: flex;
+        flex-direction: column;
+        height: 894px;
     }
     &__grid-item:nth-child(2) {
         grid-area: writing;
+        padding: 17px 21px 43px 18px;
+        width: 435px;
+        display: flex;
+        flex-direction: column;
+        height: 531px;
     }
     &__grid-item:nth-child(3) {
         grid-area: reading;
+        padding: 17px 21px 43px 18px;
+        width: 435px;
+        display: flex;
+        flex-direction: column;
+        height: 531px;
     }
     &__grid-item:nth-child(4) {
         grid-area: listening;
+        display: flex;
     }
 
     &__grid-image {
@@ -98,7 +105,6 @@
     }
 
     &__grid-content {
-        flex: auto;
     }
 }
 .speaking {
@@ -107,6 +113,7 @@
         margin-bottom: 29px;
     }
     .skills__grid-content {
+        flex: auto;
         padding: 0 0 0 43px;
     }
     .subtitle {
@@ -114,7 +121,6 @@
     }
     .txtP {
         line-height: 24px;
-        font-size: 16px;
         margin-bottom: 24px;
         max-width: 347px;
     }
@@ -123,5 +129,31 @@
     }
     .card-button {
         margin-left: 41px;
+    }
+}
+.writing {
+    display: flex;
+    .skills {
+        &__grid-image {
+            transform: translate(102px, -21px);
+            margin-bottom: -34px;
+        }
+
+        &__grid-content {
+            padding: 0 0 0 23px;
+            flex: auto;
+        }
+    }
+    .subtitle {
+        margin-bottom: 18px;
+    }
+    .txtP {
+        line-height: 24px;
+    }
+
+    .button {
+    }
+    .card-button {
+        margin-left: 16px;
     }
 }
