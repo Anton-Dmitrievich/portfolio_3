@@ -2,87 +2,68 @@
 @import "_fonts";
 
 :root {
-    --titleColorH1: rgb(0, 0, 0);
-    --titleColorH2: rgb(0, 0, 0);
-    --subTitleColorH3: rgb(38, 50, 56);
-    --txtColorP: rgb(143, 149, 165);
-    --linkColorA: rgb(38, 50, 56);
+    --ColorH1: rgb(0, 0, 0);
+    --ColorH2: rgb(0, 0, 0);
+    --ColorH3: rgb(38, 50, 56);
+    --ColorP: rgb(143, 149, 165);
+    --ColorNav: rgb(38, 50, 56);
+    --Colorbutton-p: rgb(255, 255, 255);
 }
 .body {
     font-family: Poppins;
+    font-weight: 400;
 }
 .wrapper {
-    padding: 53px 0 0 0;
+    padding: 55px 0 0 0;
 }
 .container {
     max-width: 1340px;
     margin: 0 auto;
 }
-.main {
-}
-
-.titleH1 {
+h1 {
     color: var(--titleColorH1);
     font-size: 64px;
     font-weight: 600;
     line-height: 80px;
     letter-spacing: 0%;
 }
-.titleH2 {
+h2 {
     color: var(--titleColorH2);
     font-size: 48px;
     font-weight: 600;
     line-height: 80px;
     letter-spacing: 0%;
 }
-.subtitle {
+h3 {
     color: var(--subTitleColorH3);
     font-size: 30px;
     font-weight: 600;
-    letter-spacing: 0.3px;
+    line-height: 80px;
+    letter-spacing: 0%;
 }
-.txtP {
-    color: var(--txtColorP);
-    font-weight: 400;
+p {
+    color: var(--ColorP);
     font-size: 16px;
+    font-weight: 400;
 }
-.link-a {
-    color: var(--linkColorA);
+.nav-p {
+    color: var(--ColorNav);
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: 0%;
-}
-.navButton {
-    color: rgb(0, 0, 0);
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0%;
-    background: rgb(255, 255, 255);
-    border: 2px solid rgb(38, 50, 56);
-    border-radius: 5px;
 }
 .button {
     border-radius: 15px;
     background: rgb(38, 50, 56);
-    color: rgb(255, 255, 255);
+}
+.button-p {
+    color: var(--Colorbutton-p);
     font-family: Poppins;
-    font-size: 36px;
-    font-weight: 400;
     line-height: 54px;
     letter-spacing: 0%;
 }
-.card-button {
-    margin-top: 10px;
-    font-size: 17px;
-    padding: 2px 64px;
-    border-radius: 5px;
-    width: 230px;
-    height: 60px;
-}
+@import "_nav";
 @import "_header";
 @import "_main";
 @import "_footer";
