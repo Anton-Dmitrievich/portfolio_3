@@ -153,13 +153,6 @@ p {
   background: rgb(38, 50, 56);
 }
 
-.button-p {
-  color: var(--Colorbutton-p);
-  font-family: Poppins;
-  line-height: 54px;
-  letter-spacing: 0%;
-}
-
 .nav-flex {
   display: flex;
   justify-content: space-between;
@@ -237,56 +230,57 @@ p {
   margin-bottom: 96px;
 }
 
-.skils__grid {
+.skills__grid {
   display: grid;
   grid-template-areas: "one two three" "one four four";
   gap: 20px;
 }
-.skils__grid-item {
+.skills__grid-item {
   border-radius: 10px;
   background: rgb(245, 245, 245);
 }
-.skils__grid-item:nth-child(1) {
+.skills__grid-item:nth-child(1) {
   grid-area: one;
+  width: 434px;
 }
-.skils__grid-item:nth-child(2) {
+.skills__grid-item:nth-child(2) {
   grid-area: two;
+  width: 434px;
 }
-.skils__grid-item:nth-child(3) {
+.skills__grid-item:nth-child(3) {
   grid-area: three;
+  width: 434px;
 }
-.skils__grid-item:nth-child(4) {
+.skills__grid-item:nth-child(4) {
   grid-area: four;
+  width: 885px;
 }
-.skils__grid-pic img {
+
+.skills-card__img-itme {
   max-width: 100%;
 }
-.skils__grid-content p {
+.skills-card__content {
+  padding: 0 53px 0 40px;
+}
+.skills-card__content-text p {
+  margin-bottom: 20px;
   line-height: 24px;
 }
-.skils__grid-button button {
-  border-radius: 5px;
+.skills-card__content-button {
+  width: 218px;
   color: rgb(255, 255, 255);
-  background: rgb(38, 50, 56);
   font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  padding: 15px 51px;
+  height: 60px;
+  border-radius: 5px;
 }
 
-.speaking {
-  height: 894px;
-  border: 1px solid;
+.speaking .skills-card__img {
+  padding: 33px 0 0 20px;
+  margin-bottom: 4px;
 }
-.speaking .skils__grid-pic {
-  padding: 33px 0 0 17px;
-  margin-bottom: 6px;
-}
-.speaking .skils__grid-content {
-  display: flex;
-  flex-direction: column;
-}
-.speaking .skils__grid-content p {
-  flex: auto;
+.speaking .skills-card__content-title {
+  margin-bottom: 9px;
 }
