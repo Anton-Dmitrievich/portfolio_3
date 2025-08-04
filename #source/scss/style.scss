@@ -12,6 +12,7 @@
 .body {
     font-family: Poppins;
     font-weight: 400;
+
 }
 .wrapper {
     padding: 55px 0 0 0;
@@ -31,7 +32,6 @@ h2 {
     color: var(--titleColorH2);
     font-size: 48px;
     font-weight: 600;
-    line-height: 80px;
     letter-spacing: 0%;
 }
 h3 {
@@ -54,6 +54,10 @@ p {
     line-height: 30px;
 }
 .button {
+    border-radius: 15px;
+    background: rgb(38, 50, 56);
+}
+button {
     border-radius: 15px;
     background: rgb(38, 50, 56);
 }

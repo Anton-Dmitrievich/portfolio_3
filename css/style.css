@@ -122,7 +122,6 @@ h2 {
   color: var(--titleColorH2);
   font-size: 48px;
   font-weight: 600;
-  line-height: 80px;
   letter-spacing: 0%;
 }
 
@@ -153,6 +152,11 @@ p {
   background: rgb(38, 50, 56);
 }
 
+button {
+  border-radius: 15px;
+  background: rgb(38, 50, 56);
+}
+
 .nav-flex {
   display: flex;
   justify-content: space-between;
@@ -177,6 +181,7 @@ p {
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
+  background: rgb(255, 252, 252);
 }
 
 .navbar-burger {
@@ -185,6 +190,7 @@ p {
 
 .header {
   padding: 46px 0 0 0;
+  margin-bottom: 122px;
 }
 
 .header-flex {
@@ -221,66 +227,51 @@ p {
   top: 100px;
 }
 
-.skills {
-  padding: 106px 0 0 0;
-}
-
-.skills-h2 {
-  text-align: center;
-  margin-bottom: 96px;
-}
-
-.skills__grid {
-  display: grid;
-  grid-template-areas: "one two three" "one four four";
-  gap: 20px;
-}
 .skills__grid-item {
   border-radius: 10px;
   background: rgb(245, 245, 245);
 }
-.skills__grid-item:nth-child(1) {
-  grid-area: one;
-  width: 434px;
-}
-.skills__grid-item:nth-child(2) {
-  grid-area: two;
-  width: 434px;
-}
-.skills__grid-item:nth-child(3) {
-  grid-area: three;
-  width: 434px;
-}
-.skills__grid-item:nth-child(4) {
-  grid-area: four;
-  width: 885px;
-}
-
-.skills-card__img-itme {
+.skills__grid-item img {
   max-width: 100%;
 }
-.skills-card__content {
-  padding: 0 53px 0 40px;
+.skills__grid-content {
+  flex: auto;
 }
-.skills-card__content-text p {
-  margin-bottom: 20px;
+.skills__grid-content p {
+  margin-bottom: 30px;
+  width: 347px;
   line-height: 24px;
 }
-.skills-card__content-button {
+.skills__grid-content p:last-child {
+  margin-bottom: 0;
+}
+.skills__grid-button {
   width: 218px;
+  height: 60px;
+  border-radius: 5px;
   color: rgb(255, 255, 255);
   font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
-  height: 60px;
-  border-radius: 5px;
+  margin-left: 40px;
 }
 
-.speaking .skills-card__img {
-  padding: 33px 0 0 20px;
-  margin-bottom: 4px;
+.skills-h2 {
+  text-align: center;
+  margin-bottom: 110px;
 }
-.speaking .skills-card__content-title {
-  margin-bottom: 9px;
+
+.speaking__flex {
+  width: 435px;
+  height: 894px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 92px 0;
+}
+.speaking__flex .skills__grid-image {
+  padding: 0 0 0 20px;
+  margin-top: 5px;
+}
+.speaking__flex .skills__grid-content {
+  padding-left: 44px;
 }
