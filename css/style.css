@@ -94,11 +94,13 @@ h1, h2, h3, h4, h5, h6 {
   --ColorP: rgb(143, 149, 165);
   --ColorNav: rgb(38, 50, 56);
   --Colorbutton-p: rgb(255, 255, 255);
+  --Colorbody:rgb(255, 255, 255);
 }
 
 .body {
   font-family: Poppins;
   font-weight: 400;
+  background: var(--Colorbody);
 }
 
 .wrapper {
@@ -225,4 +227,65 @@ button {
   position: absolute;
   right: 35px;
   top: 100px;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-areas: "one two three" "one four four";
+  gap: 20px;
+}
+.skills__grid-item {
+  border-radius: 10px;
+  background: rgb(245, 245, 245);
+  padding: 35px 22px 92px 22px;
+}
+.skills__grid-pic img {
+  max-width: 100%;
+}
+.skills__grid-content-txt p {
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.skills__grid-button {
+  width: 218px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.skills-h2 {
+  text-align: center;
+  margin-bottom: 108px;
+}
+
+.speaking {
+  grid-area: one;
+  padding: 35px 22px 92px 22px;
+}
+.speaking .skills__grid-content {
+  padding: 0 23px 0 20px;
+}
+.writing {
+  grid-area: two;
+  padding: 35px 22px 44px 22px;
+}
+.writing .skills__grid-pic {
+  padding: 0 0 0 122px;
+}
+.reading {
+  grid-area: three;
+  padding: 35px 22px 44px 22px;
+}
+.listening {
+  grid-area: four;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  padding: 44px 22px 68px 22px;
+}
+.listening .skills__grid-content {
+  width: 422px;
 }

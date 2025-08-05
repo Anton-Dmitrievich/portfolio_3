@@ -8,11 +8,12 @@
     --ColorP: rgb(143, 149, 165);
     --ColorNav: rgb(38, 50, 56);
     --Colorbutton-p: rgb(255, 255, 255);
+    --Colorbody:rgb(255, 255, 255);
 }
 .body {
     font-family: Poppins;
     font-weight: 400;
-
+   background: var(--Colorbody);
 }
 .wrapper {
     padding: 55px 0 0 0;
