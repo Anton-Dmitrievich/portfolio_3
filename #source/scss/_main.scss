@@ -10,7 +10,7 @@
     &__grid-item {
         border-radius: 10px;
         background: rgb(245, 245, 245);
-        padding: 35px 22px 92px 22px;
+      
     }
 
     &__grid-pic {
@@ -62,7 +62,7 @@
 }
 .writing {
     grid-area: two;
-    padding: 35px 22px 44px 22px;
+    padding: 0px 22px 44px 22px;
     .skills__grid-pic {
         padding: 0 0 0 122px;
     }
@@ -76,7 +76,7 @@
 
 .reading {
     grid-area: three;
-    padding: 35px 22px 44px 22px;
+    padding: 0px 22px 44px 22px;
     .skills__grid-pic {
     }
     .skills__grid-content {
