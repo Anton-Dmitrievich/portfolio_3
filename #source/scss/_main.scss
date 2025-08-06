@@ -10,7 +10,6 @@
     &__grid-item {
         border-radius: 10px;
         background: rgb(245, 245, 245);
-      
     }
 
     &__grid-pic {
@@ -50,6 +49,7 @@
     grid-area: one;
     padding: 35px 22px 92px 22px;
     .skills__grid-pic {
+        margin-bottom: 10px;
     }
     .skills__grid-content {
         padding: 0 23px 0 20px;
@@ -61,12 +61,18 @@
     }
 }
 .writing {
+ 
     grid-area: two;
     padding: 0px 22px 44px 22px;
     .skills__grid-pic {
         padding: 0 0 0 122px;
+        margin-bottom: -13px;
     }
     .skills__grid-content {
+        margin: 0 16px 0 15px;
+        h3 {
+            margin-bottom: -10px;
+        }
     }
     .skills__grid-content-txt {
     }
@@ -75,10 +81,13 @@
 }
 
 .reading {
+ 
     grid-area: three;
     padding: 0px 22px 44px 22px;
     .skills__grid-pic {
+        padding: 0 0 0 0;
     }
+
     .skills__grid-content {
     }
     .skills__grid-content-txt {
@@ -87,11 +96,13 @@
     }
 }
 .listening {
+    
+  
     grid-area: four;
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
-    padding:44px 22px 68px 22px;
+    padding: 48px 68px 68px 38px;
     .skills__grid-pic {
     }
     .skills__grid-content {
@@ -101,4 +112,17 @@
     }
     .skills__grid-button {
     }
+}
+
+.about {
+    &__flex {
+    }
+
+    &__content {
+    }
+
+    &__pic {
+    }
+}
+.container {
 }
