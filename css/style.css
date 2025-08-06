@@ -264,6 +264,9 @@ button {
   grid-area: one;
   padding: 35px 22px 92px 22px;
 }
+.speaking .skills__grid-pic {
+  margin-bottom: 10px;
+}
 .speaking .skills__grid-content {
   padding: 0 23px 0 20px;
 }
@@ -273,17 +276,27 @@ button {
 }
 .writing .skills__grid-pic {
   padding: 0 0 0 122px;
+  margin-bottom: -13px;
+}
+.writing .skills__grid-content {
+  margin: 0 16px 0 15px;
+}
+.writing .skills__grid-content h3 {
+  margin-bottom: -10px;
 }
 .reading {
   grid-area: three;
   padding: 0px 22px 44px 22px;
+}
+.reading .skills__grid-pic {
+  padding: 0 0 0 0;
 }
 .listening {
   grid-area: four;
   display: flex;
   flex-direction: row-reverse;
   gap: 20px;
-  padding: 44px 22px 68px 22px;
+  padding: 48px 68px 68px 38px;
 }
 .listening .skills__grid-content {
   width: 422px;
