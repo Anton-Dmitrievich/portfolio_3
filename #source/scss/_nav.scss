@@ -2,6 +2,7 @@
     &__flex {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 55px;
 
         padding: 0 5px 0 7px;
     }
@@ -21,7 +22,6 @@
         justify-content: space-between;
         width: 600px;
         padding: 0px 29px 0 45px;
-        
     }
 
     &__menu-item {
@@ -32,8 +32,9 @@
 .button-p {
 }
 .nav-button {
-background: var(--Colorbody);
+    background: var(--Colorbody);
     border: 2px solid rgb(38, 50, 56);
+    color: rgba(0, 0, 0, 1);
     border-radius: 5px;
     padding: 15px 57px;
     font-size: 24px;

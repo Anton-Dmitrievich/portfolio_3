@@ -8,12 +8,13 @@
     --ColorP: rgb(143, 149, 165);
     --ColorNav: rgb(38, 50, 56);
     --Colorbutton-p: rgb(255, 255, 255);
-    --Colorbody:rgb(255, 255, 255);
+    --Colorbody: rgb(255, 255, 255);
+    --ColorbuttonTxt: rgba(255, 255, 255, 1);
 }
 .body {
     font-family: Poppins;
     font-weight: 400;
-   background: var(--Colorbody);
+    background: var(--Colorbody);
 }
 .wrapper {
     padding: 53px 0 0 0;
@@ -33,7 +34,7 @@ h2 {
     color: var(--titleColorH2);
     font-size: 48px;
     font-weight: 600;
-    letter-spacing: 0%;
+    letter-spacing: 1px;
 }
 h3 {
     color: var(--subTitleColorH3);
@@ -54,9 +55,14 @@ p {
     font-weight: 500;
     line-height: 30px;
 }
-.button {
+button {
     border-radius: 15px;
-    background: rgb(38, 50, 56);
+    background: rgba(38, 50, 56, 1);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    color: var(--ColorbuttonTxt);
+    
 }
 
 @import "_nav";
