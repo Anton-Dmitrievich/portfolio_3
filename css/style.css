@@ -206,7 +206,7 @@ button {
 .header__flex-item:nth-child(1) img {
   position: absolute;
   top: 144px;
-  right: 40px;
+  right: 146px;
 }
 .header__flex-item:nth-child(1) p {
   line-height: 36px;
@@ -225,6 +225,7 @@ button {
   -moz-column-gap: 18px;
        column-gap: 18px;
   padding: 0 5px;
+  margin-bottom: 255px;
 }
 .skills__grid-item {
   border-radius: 10px;
@@ -241,12 +242,11 @@ button {
 }
 .skills__grid-item:nth-child(1) {
   grid-area: one;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
   padding: 0 0 88px 0;
   width: 435px;
   height: 894px;
+  display: flex;
+  flex-direction: column;
 }
 .skills__grid-item:nth-child(2) {
   padding: 0 0 40px 0;
@@ -272,9 +272,6 @@ button {
   width: 885px;
   height: 343px;
 }
-.skills__grid-pic img {
-  max-width: 100%;
-}
 .skills__grid-content h3 {
   letter-spacing: 1px;
 }
@@ -299,8 +296,11 @@ button {
   margin-bottom: 27px;
 }
 .speaking .skills__grid-content p {
-  margin-bottom: 30px;
   line-height: 24px;
+  margin-bottom: 30px;
+}
+.speaking .skills__grid-content :last-child {
+  margin-bottom: 0;
 }
 .speaking .skills__grid-button {
   padding-left: 39px;
@@ -337,4 +337,50 @@ button {
 }
 .reading .skills__grid-button {
   padding: 0 0 0 39px;
+}
+
+.listening .skills__grid-pic {
+  padding: 0 16px 0 0;
+}
+.listening .skills__grid-content {
+  padding: 18px 89px 21px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about__flex {
+  padding: 0 15px 0 6px;
+  display: flex;
+}
+.about__flex-item:nth-child(1) {
+  padding: 45px 190px 0 0;
+}
+.about__content {
+  flex: auto;
+}
+.about__content h2 {
+  margin-bottom: 40px;
+}
+.about__content p {
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 54px;
+}
+.about__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 36px 0 0;
+}
+.about__footer-item {
+  text-align: center;
+}
+.about__footer-item h2 {
+  margin-bottom: 20px;
+}
+.about__footer-item p {
+  font-size: 20px;
+}
+.about__footer-item:nth-child(1) {
+  text-align: center;
+  margin-right: 55px;
 }
