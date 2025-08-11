@@ -153,6 +153,7 @@
     &__flex {
         padding: 0 15px 0 6px;
         display: flex;
+        margin-bottom: 205px;
     }
 
     &__flex-item:nth-child(1) {
@@ -192,4 +193,35 @@
     }
 }
 .container {
+}
+
+.pricing {
+    &__flex {
+        display: flex;
+    }
+
+    &__flex-item {
+    }
+    &__flex-item:nth-child(1) {
+         
+    }
+    &__flex-item:nth-child(2) {
+    }
+    &__flex-item:nth-child(3) {
+    }
+
+    &__flex-pic {
+    }
+
+    &__flex-content {
+    }
+
+    &__flex-button {
+    }
+}
+.container {
+}
+.pricing-h2 {
+    text-align: center;
+    margin-bottom: 70px;
 }

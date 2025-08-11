@@ -351,6 +351,7 @@ button {
 .about__flex {
   padding: 0 15px 0 6px;
   display: flex;
+  margin-bottom: 205px;
 }
 .about__flex-item:nth-child(1) {
   padding: 45px 190px 0 0;
@@ -383,4 +384,12 @@ button {
 .about__footer-item:nth-child(1) {
   text-align: center;
   margin-right: 55px;
+}
+
+.pricing__flex {
+  display: flex;
+}
+.pricing-h2 {
+  text-align: center;
+  margin-bottom: 70px;
 }
