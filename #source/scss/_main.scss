@@ -309,7 +309,6 @@
         }
     }
     &__flex-item:nth-child(2) {
-        transform: translate(-12px, 0px);
     }
 
     &__form {
@@ -334,7 +333,7 @@
         background: rgba(196, 196, 196, 1);
         width: 1338px;
         height: 1px;
-        margin-bottom: 42px;
+        margin-bottom: 37px;
     }
 }
 .container {
@@ -342,14 +341,27 @@
 
 .container {
 }
+
 .footer {
     &__flex {
-        padding: 0 0 0 8px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        
+    }
+
+    &__flex-item:nth-child(1){
+       padding: 0 0 0 9px;
+    }
+
+
+    &__flex-item:nth-child(2) {
+        padding: 21px 0 0 0;
         p {
             font-size: 24px;
-            transform: translate(-2px, 16px);
+            letter-spacing: 0.1px;
         }
     }
+}
+.container {
 }

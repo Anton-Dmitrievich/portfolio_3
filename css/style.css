@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  padding: 53px 0 0 0;
+  padding: 53px 0 55px 0;
 }
 
 .container {
@@ -476,9 +476,6 @@ button {
   width: 264px;
   height: 80px;
 }
-.contact__flex-item:nth-child(2) {
-  transform: translate(-12px, 0px);
-}
 .contact__form {
   display: flex;
 }
@@ -505,15 +502,21 @@ button {
   background: rgb(196, 196, 196);
   width: 1338px;
   height: 1px;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 .footer__flex {
-  padding: 0 0 0 8px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.footer__flex p {
+.footer__flex-item:nth-child(1) {
+  padding: 0 0 0 9px;
+}
+.footer__flex-item:nth-child(2) {
+  padding: 21px 0 0 0;
+}
+.footer__flex-item:nth-child(2) p {
   font-size: 24px;
-  transform: translate(-2px, 16px);
+  letter-spacing: 0.1px;
 }
