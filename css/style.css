@@ -154,7 +154,6 @@ button {
   background: rgb(38, 50, 56);
   font-size: 36px;
   font-weight: 400;
-  line-height: 54px;
   color: var(--ColorbuttonTxt);
 }
 
@@ -192,6 +191,22 @@ button {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .nav__flex-item:nth-child(1) img {
+    max-width: 80%;
+  }
+  .navbar__menu {
+    padding: 0px 66px 0 119px;
+  }
+  .nav-p {
+    font-size: 16px;
+  }
+  .nav-button {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px 39px 6px 39px;
+  }
+}
 .header__flex {
   display: flex;
   margin-bottom: 116px;
@@ -519,4 +534,10 @@ button {
 .footer__flex-item:nth-child(2) p {
   font-size: 24px;
   letter-spacing: 0.1px;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    padding: 26px 25px 55px 26px;
+  }
 }
