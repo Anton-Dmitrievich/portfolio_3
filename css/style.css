@@ -346,7 +346,6 @@ button {
 .speaking .skills__grid-pic {
   margin-bottom: 30px;
   border: 1px red solid;
-  padding: 0 0 0 0;
 }
 .speaking .skills__grid-content {
   flex: auto;
