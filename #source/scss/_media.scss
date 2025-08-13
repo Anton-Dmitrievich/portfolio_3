@@ -1,0 +1,93 @@
+@media (max-width: 992px) {
+    .skills-h2 {
+        margin-bottom: 72px;
+    }
+
+    .skills {
+        &__grid {
+            row-gap: 13px;
+            column-gap: 13px;
+        }
+
+        &__grid-item {
+            border-radius: 10px;
+            background: rgba(245, 245, 245, 1);
+            border: 1px red solid;
+            button {
+                border-radius: 5px;
+                background: rgba(38, 50, 56, 1);
+                font-size: 20px;
+                padding: 15px 52px 15px 52px;
+                box-sizing: content-box;
+            }
+        }
+        &__grid-item:nth-child(1) {
+            grid-area: one;
+            padding: 0 22px 0 22px;
+            display: flex;
+            flex-direction: column;
+            max-width: 435px;
+        }
+        &__grid-item:nth-child(2) {
+            padding: 0 0 7px 0;
+            grid-area: two;
+            display: flex;
+            flex-direction: column;
+            max-width: 435px;
+            height: 531px;
+        }
+        &__grid-item:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+            max-width: 435px;
+        }
+        &__grid-item:nth-child(4) {
+            grid-area: four;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 52px 10px 45px 0px;
+        }
+
+        &__grid-pic {
+            max-width: 260px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__grid-content {
+            h3 {
+                letter-spacing: 1px;
+            }
+            p {
+                line-height: 24px;
+            }
+        }
+    }
+
+    .speaking {
+        .skills__grid-pic {
+            margin-bottom: 10px;
+            border: 1px red solid;
+        }
+        .skills__grid-content {
+            flex: auto;
+            padding: 0 53px 0 7px;
+            h3 {
+                margin-bottom: 27px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 21px;
+                
+            }
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+        .skills__grid-button {
+            padding-left: 20px;
+        }
+    }
+}

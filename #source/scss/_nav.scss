@@ -47,9 +47,14 @@
 }
 @media (max-width: 992px) {
     .nav {
+        &__flex {
+
+            margin-bottom: 18px;
+           
+        }
         &__flex-item:nth-child(1) {
             img {
-                max-width: 80%; 
+                max-width: 80%;
             }
         }
     }
@@ -68,5 +73,4 @@
         font-weight: 400;
         padding: 4px 39px 6px 39px;
     }
- 
 }
