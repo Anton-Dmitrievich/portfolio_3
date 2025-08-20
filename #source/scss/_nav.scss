@@ -1,4 +1,65 @@
+.nav {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6px 0 6px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__flex-item {
+    }
+}
+.container {
+}
+.navbar {
+    &__menu {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__menu-item {
+    }
+}
+.nav-button {
+    padding: 17px 57px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(38, 50, 56, 1);
+    border-radius: 5px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+}
+.burger {
+}
+.navbar-burger {
+    display: none;
+}
 
 @media (max-width: 992px) {
+    .nav {
+        &__flex {
 
+        }
+
+        &__flex-item {
+        }
+    }
+    .container {
+    }
+    .navbar {
+        &__menu {
+
+        }
+
+        &__menu-item {
+        }
+    }
+    .nav-button {
+        font-size: 16px;
+    }
+    .burger {
+    }
+    .navbar-burger {
+        display: none;
+    }
 }

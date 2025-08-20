@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  src: url("../../fonts/Poppins/Poppins-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  padding: 53px 0 55px 0;
+  padding: 51px 0 55px 0;
 }
 
 .container {
@@ -126,7 +126,7 @@ h1 {
 h2 {
   color: var(--ColorH2);
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -139,7 +139,6 @@ h3 {
 
 p {
   color: var(--ColorP);
-  font-size: 16px;
   font-weight: 400;
 }
 
@@ -147,7 +146,6 @@ a {
   color: var(--ColorA);
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
 }
 
 button {
@@ -159,68 +157,51 @@ button {
   background: rgb(38, 50, 56);
 }
 
-.header__flex {
+.nav__flex {
   display: flex;
-  margin-bottom: 116px;
+  justify-content: space-between;
+  padding: 0 6px 0 6px;
+  align-items: center;
+  gap: 10px;
 }
-.header__flex-item:nth-child(1) {
-  padding: 48px 0 0 4px;
-  position: relative;
+.navbar__menu {
+  display: flex;
+  gap: 45px;
 }
-.header__flex-item:nth-child(1) h1 {
-  margin-bottom: 40px;
-}
-.header__flex-item:nth-child(1) img {
-  position: absolute;
-  top: 144px;
-  right: 146px;
-}
-.header__flex-item:nth-child(1) p {
-  line-height: 36px;
+.nav-button {
+  padding: 17px 57px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(38, 50, 56);
+  border-radius: 5px;
   font-size: 24px;
-  max-width: 564px;
-  margin-bottom: 63px;
+  color: rgb(0, 0, 0);
 }
-.header__flex-item:nth-child(1) button {
-  padding: 32px 117px;
+
+.navbar-burger {
+  display: none;
 }
 
 @media (max-width: 992px) {
-  .header__flex {
-    display: flex;
-    margin-bottom: 74px;
+  .nav-button {
+    font-size: 16px;
   }
-  .header__flex-item:nth-child(1) {
-    border: red solid 1px;
-    padding: 48px 0 0 4px;
-    position: relative;
+  .navbar-burger {
+    display: none;
   }
-  .header__flex-item:nth-child(1) h1 {
-    margin-bottom: 22px;
-  }
-  .header__flex-item:nth-child(1) img {
-    position: absolute;
-    top: 134px;
-    right: 69px;
-    width: 19%;
-  }
-  .header__flex-item:nth-child(1) p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 38px;
-    letter-spacing: 0.7px;
-  }
-  .header__flex-item:nth-child(1) button {
-    font-size: 24px;
-    padding: 21px 77px 23px 80px;
-  }
-  .header__flex-item:nth-child(2) {
-    padding: 40px 0 0 27px;
-    border: red solid 1px;
-    max-width: 480px;
-  }
-  .header__flex-item:nth-child(2) img {
-    width: 100%;
+}
+.header__flex {
+  display: flex;
+  gap: 10px;
+  padding: 53px 0 0 0;
+}
+.header__content {
+  padding: 49px 0 0 6px;
+}
+
+@media (max-width: 992px) {
+  a {
+    color: var(--ColorA);
+    font-size: 16px;
+    font-weight: 500;
   }
 }

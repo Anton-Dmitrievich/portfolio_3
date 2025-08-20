@@ -19,7 +19,7 @@
     background: var(--backgroundBody);
 }
 .wrapper {
-    padding: 53px 0 55px 0;
+    padding: 51px 0 55px 0;
 }
 .container {
     max-width: 1350px;
@@ -35,7 +35,7 @@ h1 {
 h2 {
     color: var(--ColorH2);
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 h3 {
@@ -46,14 +46,12 @@ h3 {
 }
 p {
     color: var(--ColorP);
-    font-size: 16px;
     font-weight: 400;
 }
 a {
     color: var(--ColorA);
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
 }
 button {
     color: rgba(255, 255, 255, 1);
@@ -71,6 +69,11 @@ button {
 @import "_media";
 
 @media (max-width: 992px) {
+    a {
+    color: var(--ColorA);
+    font-size: 16px;
+    font-weight: 500;
+}
 }
 @media (max-width: 767px) {
 }
