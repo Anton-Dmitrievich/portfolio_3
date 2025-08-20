@@ -2,11 +2,13 @@
 @import "_fonts";
 
 :root {
-    --ColorH1: rgb(0, 0, 0);
-    --ColorH2: rgb(0, 0, 0);
-    --ColorH3: rgb(38, 50, 56);
-    --ColorP: rgb(143, 149, 165);
-    --ColorNav: rgb(38, 50, 56);
+    --ColorH1: rgba(0, 0, 0, 1);
+    --ColorH2: rgba(0, 0, 0, 1);
+    --ColorH3: rgba(38, 50, 56, 1);
+    --ColorP: rgba(143, 149, 165, 1);
+    --ColorA: rgba(38, 50, 56, 1);
+    --backgroundBody: rgba(255, 255, 255, 1);
+    --backgroundGrey: rgba(245, 245, 245, 1);
     --Colorbutton-p: rgb(255, 255, 255);
     --Colorbody: rgb(255, 255, 255);
     --ColorbuttonTxt: rgba(255, 255, 255, 1);
@@ -14,7 +16,7 @@
 .body {
     font-family: Poppins;
     font-weight: 400;
-    background: var(--Colorbody);
+    background: var(--backgroundBody);
 }
 .wrapper {
     padding: 53px 0 55px 0;
@@ -24,20 +26,20 @@
     margin: 0 auto;
 }
 h1 {
-    color: var(--titleColorH1);
+    color: var(--ColorH1);
     font-size: 64px;
     font-weight: 600;
     line-height: 80px;
     letter-spacing: 1px;
 }
 h2 {
-    color: var(--titleColorH2);
+    color: var(--ColorH2);
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 h3 {
-    color: var(--subTitleColorH3);
+    color: var(--ColorH3);
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 0%;
@@ -48,17 +50,18 @@ p {
     font-weight: 400;
 }
 a {
-    color: var(--ColorNav);
+    color: var(--ColorA);
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
 }
 button {
-    border-radius: 15px;
-    background: rgba(38, 50, 56, 1);
-    font-size: 36px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-size: 18px;
     font-weight: 400;
-    color: var(--ColorbuttonTxt);
+    letter-spacing: 0%;
+    background: rgba(38, 50, 56, 1);
 }
 
 @import "_nav";
