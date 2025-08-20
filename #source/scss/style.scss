@@ -34,19 +34,16 @@ h1 {
     font-size: 64px;
     font-weight: 600;
     line-height: 80px;
-
 }
 h2 {
     color: var(--ColorH2);
     font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: var(--Poppins-SemiBold);
 }
 h3 {
     color: var(--ColorH3);
     font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 0%;
+    font-family: var(--Poppins-SemiBold);
 }
 p {
     color: var(--ColorP);
@@ -63,7 +60,6 @@ button {
     font-family: var(--Poppins-Medium);
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 0%;
     background: rgba(38, 50, 56, 1);
 }
 

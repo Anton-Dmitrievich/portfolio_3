@@ -1,0 +1,80 @@
+.skills {
+    padding: 120px 0 0 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "one two three"
+            "one four four";
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding: 0px 0 0 0;
+    }
+
+    &__grid-item {
+        border-radius: 10px;
+        background: rgba(245, 245, 245, 1);
+    }
+
+    &__grid-pic {
+    }
+
+    &__grid-content {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        align-items: flex-start;
+
+        button {
+            padding: 15px 51px;
+            border-radius: 5px;
+        }
+    }
+    &__grid-content-txt {
+        p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+.container {
+}
+.skills-h2 {
+    text-align: center;
+    margin-bottom: 110px;
+}
+.speaking {
+    grid-area: one;
+    padding: 34px 15px 90px 15px;
+    .skills__grid-pic {
+        padding: 0px 0 0 9px;
+        margin-bottom: 30px;
+    }
+    .skills__grid-content {
+        padding: 0px 28px 0 30px;
+        p {
+            line-height: 25px;
+        }
+    }
+}
+.writing {
+    grid-area: two;
+    padding: 0 30px 0px 39px;
+    .skills__grid-pic {
+        padding: 0px 0 0 90px;
+        margin-bottom: -15px;
+    }
+    .skills__grid-content {
+        padding: 0 0px 0px 7px;
+    }
+}
+.reading {
+    grid-area: three;
+    padding: 0 30px 45px 39px;
+}
+.listening {
+    grid-area: four;
+    display: flex;
+    flex-direction: row-reverse;
+}
