@@ -81,11 +81,25 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins-Regular";
   font-display: swap;
   src: url("../../fonts/Poppins/Poppins-Regular.woff2");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: Poppins-Regular;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  font-display: swap;
+  src: url("../../fonts/Poppins/Poppins-Medium.woff2");
+  font-weight: 500;
+  font-style: Poppins-Medium;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  font-display: swap;
+  src: url("../../fonts/Poppins/Poppins-SemiBold.woff2");
+  font-weight: 600;
+  font-style: Poppins-SemiBold;
 }
 :root {
   --ColorH1: rgba(0, 0, 0, 1);
@@ -98,10 +112,13 @@ h1, h2, h3, h4, h5, h6 {
   --Colorbutton-p: rgb(255, 255, 255);
   --Colorbody: rgb(255, 255, 255);
   --ColorbuttonTxt: rgba(255, 255, 255, 1);
+  --Poppins-Regular: Poppins-Regular;
+  --Poppins-Medium: Poppins-Medium;
+  --Poppins-SemiBold: Poppins-SemiBold;
 }
 
 .body {
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   font-weight: 400;
   background: var(--backgroundBody);
 }
@@ -117,10 +134,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: var(--ColorH1);
+  font-family: var(--Poppins-SemiBold);
   font-size: 64px;
   font-weight: 600;
   line-height: 80px;
-  letter-spacing: 1px;
 }
 
 h2 {
@@ -144,13 +161,14 @@ p {
 
 a {
   color: var(--ColorA);
+  font-family: var(--Poppins-Medium);
   font-size: 20px;
   font-weight: 500;
 }
 
 button {
   color: rgb(255, 255, 255);
-  font-family: Poppins;
+  font-family: var(--Poppins-Medium);
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0%;
@@ -190,12 +208,34 @@ button {
   }
 }
 .header__flex {
+  padding: 52px 0 0 0;
   display: flex;
-  gap: 10px;
-  padding: 53px 0 0 0;
+  justify-content: space-between;
 }
-.header__content {
-  padding: 49px 0 0 6px;
+.header__flex-item:nth-child(1) {
+  max-width: 632px;
+  padding: 50px 90px 0 5px;
+}
+.header__content p {
+  font-size: 24px;
+  line-height: 148%;
+  margin-bottom: 62px;
+}
+.header__content button {
+  font-size: 36px;
+  padding: 32px 117px;
+  border-radius: 15px;
+}
+.header__content-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+.header__content-title img {
+  position: absolute;
+  top: 95px;
+  right: 0px;
 }
 
 @media (max-width: 992px) {

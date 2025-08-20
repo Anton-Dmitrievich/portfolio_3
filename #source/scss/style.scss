@@ -12,9 +12,12 @@
     --Colorbutton-p: rgb(255, 255, 255);
     --Colorbody: rgb(255, 255, 255);
     --ColorbuttonTxt: rgba(255, 255, 255, 1);
+    --Poppins-Regular: Poppins-Regular;
+    --Poppins-Medium: Poppins-Medium;
+    --Poppins-SemiBold: Poppins-SemiBold;
 }
 .body {
-    font-family: Poppins;
+    font-family: Poppins-Regular;
     font-weight: 400;
     background: var(--backgroundBody);
 }
@@ -27,10 +30,11 @@
 }
 h1 {
     color: var(--ColorH1);
+    font-family: var(--Poppins-SemiBold);
     font-size: 64px;
     font-weight: 600;
     line-height: 80px;
-    letter-spacing: 1px;
+
 }
 h2 {
     color: var(--ColorH2);
@@ -50,12 +54,13 @@ p {
 }
 a {
     color: var(--ColorA);
+    font-family: var(--Poppins-Medium);
     font-size: 20px;
     font-weight: 500;
 }
 button {
     color: rgba(255, 255, 255, 1);
-    font-family: Poppins;
+    font-family: var(--Poppins-Medium);
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0%;
@@ -70,10 +75,10 @@ button {
 
 @media (max-width: 992px) {
     a {
-    color: var(--ColorA);
-    font-size: 16px;
-    font-weight: 500;
-}
+        color: var(--ColorA);
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 @media (max-width: 767px) {
 }

@@ -11,10 +11,23 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "Poppins";
+	font-family: "Poppins-Regular";
 	font-display: swap;
 	src: url("../../fonts/Poppins/Poppins-Regular.woff2");
-	font-weight: normal;
-	font-style: normal;
+	font-weight: 400;
+	font-style: Poppins-Regular;
 }
-
+@font-face {
+	font-family: "Poppins-Medium";
+	font-display: swap;
+	src: url("../../fonts/Poppins/Poppins-Medium.woff2");
+	font-weight: 500;
+	font-style: Poppins-Medium;
+}
+@font-face {
+	font-family: "Poppins-SemiBold";
+	font-display: swap;
+	src: url("../../fonts/Poppins/Poppins-SemiBold.woff2");
+	font-weight: 600;
+	font-style: Poppins-SemiBold;
+}
