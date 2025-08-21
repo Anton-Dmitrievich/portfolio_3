@@ -1,20 +1,18 @@
 .skills {
-    padding: 120px 0 0 0;
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             "one two three"
             "one four four";
-        gap: 20px;
-        justify-content: space-evenly;
-        align-items: stretch;
-        padding: 0px 0 0 0;
+        row-gap: 20px;
+        column-gap: 18px;
     }
 
     &__grid-item {
         border-radius: 10px;
         background: rgba(245, 245, 245, 1);
+        padding: 0 15px;
     }
 
     &__grid-pic {
@@ -23,18 +21,16 @@
     &__grid-content {
         display: flex;
         flex-direction: column;
-        gap: 28px;
         align-items: flex-start;
-
-        button {
-            padding: 15px 51px;
-            border-radius: 5px;
-        }
-    }
-    &__grid-content-txt {
+        gap: 30px;
         p {
+            line-height: 20px;
             font-size: 16px;
-            line-height: 25px;
+        }
+        button {
+            border-radius: 5px;
+            background: rgba(38, 50, 56, 1);
+            padding: 15px 51px;
         }
     }
 }
@@ -42,39 +38,50 @@
 }
 .skills-h2 {
     text-align: center;
-    margin-bottom: 110px;
+    margin-bottom: 111px;
 }
 .speaking {
     grid-area: one;
-    padding: 34px 15px 90px 15px;
     .skills__grid-pic {
-        padding: 0px 0 0 9px;
-        margin-bottom: 30px;
+        padding: 36px 0 90px 10px;
+        margin-bottom: -60px;
     }
     .skills__grid-content {
-        padding: 0px 28px 0 30px;
-        p {
-            line-height: 25px;
-        }
+        padding: 0px 35px 0px 29px;
     }
 }
 .writing {
     grid-area: two;
-    padding: 0 30px 0px 39px;
+    padding: 0px 0px 44px 0px;
     .skills__grid-pic {
-        padding: 0px 0 0 90px;
+        padding: 0px 0px 0 106px;
         margin-bottom: -15px;
     }
     .skills__grid-content {
-        padding: 0 0px 0px 7px;
+        padding: 0 11px 0 25px;
     }
 }
 .reading {
     grid-area: three;
-    padding: 0 30px 45px 39px;
+    padding: 0px 0px 44px 0px;
+    .skills__grid-pic {
+        padding: 10px 0px 0 0px;
+        margin: 0 0 0 -19px;
+    }
+    .skills__grid-content {
+        padding: 23px 15px 0 21px;
+    }
 }
 .listening {
     grid-area: four;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    padding: 43px 26px 68px 48px;
+    .skills__grid-pic {
+        padding: 2px 9px 0 0px;
+    }
+    .skills__grid-content {
+        padding: 0px 96px 0 0px;
+    }
 }
