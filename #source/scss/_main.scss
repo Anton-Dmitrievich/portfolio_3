@@ -154,7 +154,9 @@
     }
     &__flex-item:nth-child(1) {
         padding: 0 0 0 30px;
-        
+        .pricing__flex-pic {
+            margin-bottom: 51px;
+        }
     }
     &__flex-item:nth-child(2) {
         padding: 26px 103px 0 0;
@@ -168,8 +170,7 @@
     }
 
     &__flex-content {
-        p{
-
+        p {
         }
     }
 
