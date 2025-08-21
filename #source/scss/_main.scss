@@ -144,15 +144,33 @@
 
 .pricing {
     &__flex {
+        display: flex;
     }
 
     &__flex-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__flex-item:nth-child(1) {
+        padding: 0 0 0 30px;
+        
+    }
+    &__flex-item:nth-child(2) {
+        padding: 26px 103px 0 0;
+        box-sizing: border-box;
+    }
+    &__flex-item:nth-child(3) {
+        padding: 0 25px 0 0;
     }
 
     &__flex-pic {
     }
 
     &__flex-content {
+        p{
+
+        }
     }
 
     &__flex-button {
@@ -162,4 +180,5 @@
 }
 .pricing-h2 {
     text-align: center;
+    margin-bottom: 72px;
 }
