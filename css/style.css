@@ -368,22 +368,51 @@ button {
   flex-direction: column;
   align-items: flex-start;
 }
-.pricing__flex-item:nth-child(1) {
-  padding: 0 0 0 30px;
-}
 .pricing__flex-item:nth-child(1) .pricing__flex-pic {
-  margin-bottom: 51px;
+  margin-bottom: 50px;
 }
 .pricing__flex-item:nth-child(2) {
-  padding: 26px 103px 0 0;
-  box-sizing: border-box;
+  padding: 28px 0 0 56px;
 }
-.pricing__flex-item:nth-child(3) {
-  padding: 0 25px 0 0;
+.pricing__flex-item:nth-child(2) .pricing__flex-pic {
+  margin-bottom: 50px;
 }
+.pricing__flex-item:nth-child(3) .pricing__flex-pic {
+  margin-bottom: 20px;
+}
+.pricing__flex-content {
+  padding: 0 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 635px;
+  height: 225px;
+  gap: 30px;
+}
+.pricing__flex-content p {
+  font-size: 20px;
+  line-height: 140%;
+  flex: auto;
+}
+.pricing__flex-content button {
+  padding: 0px 14px 0px 24px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pricing__flex-content button span {
+  color: rgb(38, 50, 56);
+  font-size: 32px;
+}
+.pricing__flex-content button p {
+  color: rgb(84, 98, 105);
+}
+
 .pricing-h2 {
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 992px) {
